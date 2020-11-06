@@ -1,3 +1,5 @@
+# Tugas LBE Alpro
+
 # Tools
 * HTML5
 * CSS3
@@ -5,5 +7,4 @@
 
 # Fitur
 * Responsive
-* Mobile Friendly
 * Carousel
