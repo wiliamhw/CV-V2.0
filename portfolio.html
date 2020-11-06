@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="William H.W CV">
+    <meta name="keywords" content="William, Handi Wijaya, CV">
+    <meta name="Author" content="William Handi Wijaya">
+    
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
+    <script src="https://use.fontawesome.com/ce701335aa.js"></script>
+    <title>My CV | Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div id="Title">
+          <h1>My <span id="highlight">CV
+            <script>
+  				    document.getElementById("highlight").onclick = function() {
+  				        location.href = "index.html";
+  				    };
+    			  </script>
+          </span></h1>
+          <span class="icon" onclick="dropDown()"><i class="fa fa-bars"></i></span>
+        </div>
+        <nav class="topnav" id="myTopnav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a class="current" href="portfolio.html">PORTOFOLIO</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="project">
+      <h2 class="page-title">Proyek</h2>
+      <div class="container">
+        <div id="left">
+          <div class="p-box">
+            <div class="img-box">
+              <a href="https://myfirstwebsite-whw.netlify.app/">
+                <img src="./img/homepage.png" class="card-img" alt="Homepage">
+              </a>
+            </div>
+            <h3 class="card-title">Website</h3>
+            <h4 class="card-exp">Proyek Pribadi</h4>
+          </div>
+          <div class="p-box">
+            <div class="img-box">
+              <a href="https://github.com/frain8/My-Website/tree/master/finance">
+                <img src="./img/flask.png" class="card-img" alt="Stock-Sell">
+              </a>
+            </div>
+            <h3 class="card-title">Stock Selling</h3>
+            <h4 class="card-exp">Proyek Pribadi</h4>
+          </div>
+        </div>
+        <div id="right">
+          <div class="p-box">
+            <div class="img-box">
+              <a href="https://mozzila-web01.netlify.app">
+                <img src="./img/mozilla.png" class="card-img" alt="Small Page">
+              </a>
+            </div>
+            <h3 class="card-title">Homepage</h3>
+            <h4 class="card-exp">Proyek Pribadi</h4>
+          </div>
+          <div class="p-box">
+            <div class="img-box">
+              <a href="index.html">
+                <img src="./img/CV.png" class="card-img" alt="CV Website">
+              </a>
+            </div>
+            <h3 class="card-title">CV Website</h3>
+            <h4 class="card-exp">Tugas Kuliah</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <h2 class="page-title">Kemampuan</h2>
+        <div id="c-left">
+          <div class="card">
+            <img src="./img/logo_python.png" alt="html">
+            <div class="txt">
+              <h4><b>Python3</b></h4>
+              <p>Familiar</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/logo_html.png" alt="html">
+            <div class="txt">
+              <h4><b>HTML5</b></h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+        </div>
+        <div id="c-mid">
+          <div class="card">
+            <img src="./img/logo_sqlite.png" alt="html">
+            <div class="txt">
+              <h4><b>Sqlite3</b></h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/logo_js.png" alt="html">
+            <div class="txt">
+              <h4><b>Javascript</b></h4>
+              <p>Familiar</p>
+            </div>
+          </div>
+        </div>
+        <div id="c-right">
+          <div class="card">
+            <img src="./img/logo_C.png" alt="html">
+            <div class="txt">
+              <h4><b>C/C++</b></h4>
+              <p>Proficient</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./img/logo_css.png" alt="html">
+            <div class="txt">
+              <h4><b>CSS3</b></h4>
+              <p>Experienced</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <h1>Kontak</h1>
+        <h2>Ayo Berkomunikasi</h2> 
+        <div id="social-icons">
+          <a href="https://github.com/frain8" target="_blank" class="social-icon"><span class="fa fa-github-square"></span></a>
+          <a href="https://www.instagram.com/wiliam_hw/" target="_blank" class="social-icon"><span class="fa fa-instagram"></span></a>
+          <a href="https://www.facebook.com/wiliam.wiliam.986/" target="_blank" class="social-icon"><span class="fa fa-facebook-square"></span></a>
+        </div>
+        <h4>Jl. Taman Buaran Indah 1, Blok: Z, No: 452, Duren Sawit, Jakarta Timur</h4>
+        <h4><i class="fa fa-envelope-square" aria-hidden="true"></i>  wiliamwijaya1985@gmail.com</h4>
+        <h4><i class="fa fa-phone-square" aria-hidden="true"></i>  0858-8375-4704</h4>
+      </div>
+    </footer>
+    <script src=./script.js></script>
+  </body>
+</html>

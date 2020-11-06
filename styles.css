@@ -1,0 +1,525 @@
+/* Global */
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    scroll-padding-top: 70px;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    height: 70px;
+    border-bottom: #e8491d 3px solid;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+
+header #Title {
+    float: left;
+}
+
+header #Title h1 {
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+    margin: 0;
+}
+
+.topnav {
+    float: right;
+    margin-top: 10px;
+}
+
+header #highlight,
+header .current {
+    color: #e8491d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header #highlight {
+    font-size: 1em;
+}
+
+header .link:hover,
+#highlight:hover {
+    color: #cccccc;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .icon {
+    display: none;
+}
+
+
+/* Main-Title */
+
+#main-title {
+    min-height: 770px;
+    background: url("./img/background1.jpg") no-repeat;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+    transition-property: background, background-position, background-size;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+}
+
+#main-title h1 {
+    margin: 25% auto 5px auto;
+    font-size: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#main-title p {
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-style: italic;
+    font-size: 40px;
+    margin-bottom: 25%;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: #F5F1DE;
+}
+
+footer h1 {
+    font-size: 35px;
+    margin: 20px 20px 5px 20px;
+}
+
+footer h2 {
+    margin: 0 25px;
+    font-size: 20px;
+    border-bottom: 1px solid #727878;
+    color: #727878;
+}
+
+.fa-github-square,
+.fa-instagram,
+.fa-facebook-square {
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.fa-github-square:hover,
+.fa-instagram:hover,
+.fa-facebook-square:hover {
+    transform: scale(1.1) !important;
+}
+
+#social-icons {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+    border: 0;
+}
+
+.social-icon {
+    display: inline-block;
+    font-size: 45px;
+    margin: 0 25px;
+    color: black;
+    text-decoration: none;
+    animation: 1s ease 0s 2 normal none running pulse;
+}
+
+.fa-facebook-square:hover {
+    color: rgb(59, 89, 152);
+}
+
+.fa-instagram:hover {
+    color: rgb(225, 48, 108);
+}
+
+.fa-github-square:hover {
+    color: rgb(128, 0, 128);
+}
+
+footer h4 {
+    margin: 0;
+}
+
+
+/* Biodata */
+
+#Biodata .dark {
+    padding: 15px 5% 15px 10%;
+    margin: 10px 0;
+}
+
+aside#Biodata {
+    float: right;
+    text-align: left;
+    width: 30%;
+    margin-top: 20px;
+}
+
+.dark {
+    border-radius: 20px;
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin: 10px 0;
+}
+
+#data ol {
+    padding: 0 5px 0 10%;
+    line-height: 30px;
+}
+
+#riwayat {
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.date {
+    float: left;
+}
+
+.place {
+    text-align: right;
+}
+
+#boxes {
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Main-col */
+
+article#main-col {
+    float: left;
+    width: 65%;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 35px;
+    margin: 20px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+#profil {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+#profil img {
+    width: 130px;
+    float: left;
+    padding: 25px 15px 0 15px;
+}
+
+#profil p {
+    border-radius: 5px;
+    text-align: justify;
+    line-height: 35px;
+    padding: 15px;
+    border: #cccccc solid 1px;
+    background-color: #e6e6e6;
+}
+
+
+/* Projek */
+
+#project {
+    margin-top: 40px;
+}
+
+.p-box {
+    display: block;
+    width: 80%;
+    background-color: #203764;
+    text-align: center;
+    margin: 3% auto 12% auto;
+    border-radius: 5px;
+}
+
+.img-box {
+    display: block;
+    width: 100%;
+    background-color: #FFC000;
+}
+
+.card-img {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.p-box,
+.img-box,
+.card-img {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.img-box:hover .card-img {
+    opacity: 0.5;
+}
+
+#left {
+    width: 50%;
+    float: left;
+}
+
+#right {
+    width: 50%;
+    float: right;
+}
+
+.p-box h3 {
+    font-size: 18px;
+    color: white;
+    margin: 0;
+    padding-top: 5%;
+}
+
+.p-box h4 {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: normal;
+    color: #A6A6A6;
+    margin-top: 0;
+    padding-bottom: 5%;
+}
+
+
+/* Skills */
+
+#skills h2 {
+    margin: 35px 20px 32px 20px;
+}
+
+#c-left,
+#c-mid,
+#c-right {
+    float: left;
+    width: 33.33%;
+}
+
+#c-left img {
+    float: right;
+}
+
+#c-right img {
+    float: left;
+}
+
+.card img,
+.txt {
+    display: block;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 200px;
+    padding-bottom: 3%;
+}
+
+#skills {
+    margin-bottom: 50px;
+}
+
+.txt {
+    text-align: center;
+    padding-bottom: 0;
+}
+
+#c-left .txt {
+    margin-right: 0;
+}
+
+#c-right .txt {
+    margin-left: 0;
+}
+
+.txt h4 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.txt p {
+    font-weight: normal;
+    margin: 0;
+    padding-bottom: 15%;
+}
+
+
+/* Media */
+
+@media(max-width: 850px) {
+    header #Title,
+    .topnav,
+    .topnav li,
+    article#main-col {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #Biodata .dark {
+        padding-left: 7%;
+        margin: 10px 17%;
+    }
+    aside#Biodata {
+        float: none;
+        text-align: left;
+        width: 100%;
+        margin-top: 40px;
+    }
+    aside#Biodata h3 {
+        text-align: center;
+    }
+    #profil {
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    header #Title h1 {
+        padding-bottom: 5px;
+    }
+    #main-title h1 {
+        margin-top: 175px;
+    }
+    #c-left img,
+    #c-right img {
+        float: none;
+    }
+    #c-left .txt,
+    #c-right .txt {
+        margin-right: auto;
+    }
+    .txt {
+        width: 100%;
+    }
+}
+
+@media(max-width: 430px) {
+    header {
+        padding: 7px 0 10px 0;
+    }
+    .topnav ul li {
+        display: none;
+    }
+    header #Title {
+        text-align: left;
+        padding-top: 12px;
+        padding-bottom: 0;
+    }
+    header h1 {
+        float: left;
+    }
+    header .icon {
+        font-size: 25px;
+        float: right;
+        display: block;
+        margin: 7px 20px 0 0;
+    }
+    .topnav.responsive {
+        position: relative;
+        margin-top: 50px;
+    }
+    .topnav.responsive li {
+        padding: 10px 0;
+        float: none;
+        display: block;
+        text-align: center;
+    }
+    .container {
+        width: 90%;
+    }
+    #main-title h1 {
+        margin-top: 150px;
+        font-size: 55px;
+    }
+    #main-title p {
+        font-size: 30px;
+    }
+    #profil p {
+        line-height: 25px;
+    }
+    #profil img {
+        width: 100px;
+    }
+    .dark {
+        padding: 5px 15px;
+    }
+    #Biodata .dark {
+        margin: 10px 30px 0 30px;
+    }
+    #boxes .dark {
+        margin: 20px 0 20px 0;
+        float: none;
+    }
+    #boxes .dark .date {
+        padding-right: 20px;
+    }
+    #right,
+    #left {
+        width: 100%;
+    }
+    #skills .page-title {
+        margin-top: 23px;
+        margin-bottom: 20px;
+    }
+    .txt p {
+        font-size: 12px;
+    }
+    .social-icon {
+        margin: 0 12px;
+    }
+}
