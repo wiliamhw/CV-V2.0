@@ -28,24 +28,31 @@ function dropDown() {
     }
 }
 
+// Scrollspy
 (function() {
     'use strict';
 
-    var section = document.querySelectorAll(".section");
-    var sections = {};
-    var i = 0;
+    let section = document.querySelectorAll(".section");
+    let sections = {};
+    let target = '';
+    let i = 0;
 
     Array.prototype.forEach.call(section, function(e) {
         sections[e.id] = e.offsetTop;
     });
 
     window.onscroll = function() {
-        var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
+        let scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
         for (i in sections) {
-            if (scrollPosition + 150 >= sections[i]) {
+            if (scrollPosition + 140 >= sections[i]) {
                 document.querySelector('.current').setAttribute('class', 'link');
-                document.querySelector('a[href*=' + i + ']').setAttribute('class', 'link current');
+                if (i == "main-title") {
+                    target = document.querySelectorAll('a[href*=' + i + ']')[1];
+                } else {
+                    target = document.querySelector('a[href*=' + i + ']');
+                }
+                target.setAttribute('class', 'link current');
             }
         }
     };

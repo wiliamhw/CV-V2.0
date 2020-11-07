@@ -1,4 +1,5 @@
 # Tugas LBE Alpro
+CV website v2.0
 
 # Tools
 * HTML5
@@ -7,4 +8,11 @@
 
 # Fitur
 * Responsive
+* Mobile friendly
 * Carousel
+* Static navbar
+* Drop down menu for mobile view
+* Scroll spy
+
+# Website Link
+<wiliamhw.github.io>
