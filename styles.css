@@ -141,16 +141,12 @@ footer h2 {
     color: #727878;
 }
 
-.fa-github-square,
-.fa-instagram,
-.fa-facebook-square {
+.fab {
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
 }
 
-.fa-github-square:hover,
-.fa-instagram:hover,
-.fa-facebook-square:hover {
+.fab:hover {
     transform: scale(1.1) !important;
 }
 
@@ -164,23 +160,27 @@ footer h2 {
 
 .social-icon {
     display: inline-block;
-    font-size: 45px;
+    font-size: 37px;
     margin: 0 25px;
     color: black;
     text-decoration: none;
     animation: 1s ease 0s 2 normal none running pulse;
 }
 
-.fa-facebook-square:hover {
-    color: rgb(59, 89, 152);
+.fa-line:hover {
+    color: rgb(4, 196, 4);
 }
 
 .fa-instagram:hover {
     color: rgb(225, 48, 108);
 }
 
-.fa-github-square:hover {
+.fa-github:hover {
     color: rgb(128, 0, 128);
+}
+
+.fa-linkedin:hover {
+    color: rgb(4, 116, 180);
 }
 
 footer h4 {
@@ -365,7 +365,7 @@ article#main-col {
 .txt {
     display: block;
     margin: 0 auto;
-    width: 60%;
+    width: 50%;
     max-width: 200px;
     padding-bottom: 3%;
 }

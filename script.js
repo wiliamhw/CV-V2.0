@@ -41,10 +41,9 @@ function dropDown() {
 
     window.onscroll = function() {
         var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
-        console.log(scrollPosition);
 
         for (i in sections) {
-            if (scrollPosition + 70 >= sections[i]) {
+            if (scrollPosition + 150 >= sections[i]) {
                 document.querySelector('.current').setAttribute('class', 'link');
                 document.querySelector('a[href*=' + i + ']').setAttribute('class', 'link current');
             }
