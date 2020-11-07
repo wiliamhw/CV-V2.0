@@ -15,4 +15,4 @@ CV website v2.0
 * Scroll spy
 
 # Website Link
-<https://wiliamhw.github.io/>
+<https://cv2-whw.netlify.app>
