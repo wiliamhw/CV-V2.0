@@ -140,6 +140,10 @@ footer h2 {
     color: #727878;
 }
 
+footer .container {
+    margin-bottom: 0;
+}
+
 .fab {
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
@@ -257,8 +261,7 @@ article#main-col {
 
 #profil img {
     width: 130px;
-    float: left;
-    padding: 25px 15px 0 15px;
+    border-radius: 50px;
 }
 
 #profil p {
@@ -503,9 +506,6 @@ article#main-col {
     }
     #profil p {
         line-height: 25px;
-    }
-    #profil img {
-        width: 100px;
     }
     .dark {
         padding: 5px 15px;

@@ -1,3 +1,5 @@
+'use strict';
+
 let images = ['./img/background1.jpg',
     './img/background2.jpg',
     './img/background3.jpg',
@@ -5,18 +7,6 @@ let images = ['./img/background1.jpg',
 
 let myBack = document.getElementById('main-title');
 let x = 0;
-carousel();
-
-function carousel() {
-    myBack.style.background = "url(" + images[x] + ")";
-    myBack.style.backgroundSize = "cover";
-    myBack.style.backgroundPosition = "center center"
-    myBack.style.minHeight = "770px";
-
-    x++;
-    if (x >= images.length) x = 0;
-    setTimeout(carousel, 5000);
-}
 
 function dropDown() {
     let x = document.getElementById('myTopnav');
@@ -28,16 +18,35 @@ function dropDown() {
     }
 }
 
+// Carousel
+(function carousel() {
+    myBack.style.background = "url(" + images[x] + ")";
+    myBack.style.backgroundSize = "cover";
+    myBack.style.backgroundPosition = "center center"
+    myBack.style.minHeight = "770px";
+
+    x++;
+    if (x >= images.length) x = 0;
+    setTimeout(carousel, 5000);
+})();
+
 // Navbar auto-close
 (function() {
     let width = window.innerWidth;
-    // console.log(width);
 
-    if (width <= 554) {
-        let x = document.getElementById('myTopnav');
+    // Change width on resize
+    (function() {
+        window.onresize = function() {
+            width = window.innerWidth;
+            // console.log(width);
+        };
+    })();
 
-        // Get click position
-        window.onclick = function(e) {
+    let x = document.getElementById('myTopnav');
+
+    // Get click position
+    window.onclick = function(e) {
+        if (width <= 554) {
             e = e || window.event;
             let target = e.target;
             let text = target.className;
@@ -46,13 +55,12 @@ function dropDown() {
             if (text !== 'fa fa-bars' && x.className === 'topnav responsive') {
                 x.className = 'topnav';
             }
-        };
-    }
+        }
+    };
 })();
 
 // Scrollspy
 (function() {
-    'use strict';
 
     let section = document.querySelectorAll(".section");
     let sections = {};
