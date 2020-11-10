@@ -7,6 +7,7 @@ let images = ['./img/background1.jpg',
 
 let myBack = document.getElementById('main-title');
 let x = 0;
+let width = window.innerWidth;
 
 function dropDown() {
     let x = document.getElementById('myTopnav');
@@ -32,16 +33,6 @@ function dropDown() {
 
 // Navbar auto-close
 (function() {
-    let width = window.innerWidth;
-
-    // Change width on resize
-    (function() {
-        window.onresize = function() {
-            width = window.innerWidth;
-            // console.log(width);
-        };
-    })();
-
     let x = document.getElementById('myTopnav');
 
     // Get click position
@@ -70,6 +61,18 @@ function dropDown() {
     Array.prototype.forEach.call(section, function(e) {
         sections[e.id] = e.offsetTop;
     });
+
+    // Change width and offsetTop on resize
+    (function() {
+        window.onresize = function() {
+            Array.prototype.forEach.call(section, function(e) {
+                sections[e.id] = e.offsetTop;
+            });
+            width = window.innerWidth;
+            // console.log(width);
+            // console.log(sections);
+        };
+    })();
     // console.log(sections);
 
     window.onscroll = function() {
