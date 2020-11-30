@@ -1,5 +1,3 @@
-'use strict';
-
 let images = ['./img/background1.jpg',
     './img/background2.jpg',
     './img/background3.jpg',
