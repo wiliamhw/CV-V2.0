@@ -348,6 +348,10 @@ article#main-col {
     margin: 35px 20px 32px 20px;
 }
 
+#skills .container {
+    max-width: 1000px;
+}
+
 #c-left,
 #c-mid,
 #c-right {
