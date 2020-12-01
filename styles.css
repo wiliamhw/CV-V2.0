@@ -124,7 +124,7 @@ header .icon {
 
 footer {
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 12px;
     background-color: #F5F1DE;
 }
 
@@ -155,7 +155,7 @@ footer .container {
 
 #social-icons {
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
     width: 100%;
     padding: 0;
     border: 0;
