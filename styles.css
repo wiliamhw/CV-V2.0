@@ -141,7 +141,7 @@ footer h2 {
 }
 
 footer .container {
-    margin-bottom: 0;
+    margin-bottom: 15px;
 }
 
 .fab {
@@ -156,6 +156,7 @@ footer .container {
 #social-icons {
     display: block;
     margin: 15px auto;
+    margin-bottom: 0;
     width: 100%;
     padding: 0;
     border: 0;
