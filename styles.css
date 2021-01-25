@@ -124,7 +124,7 @@ header .icon {
 
 footer {
     text-align: center;
-    padding-bottom: 12px;
+    padding-bottom: 25px;
     background-color: #F5F1DE;
 }
 
@@ -144,18 +144,18 @@ footer .container {
     margin-bottom: 15px;
 }
 
-.fab {
+.fab, .fa {
     transition: all 0.3s ease-in-out 0s;
     cursor: pointer;
 }
 
-.fab:hover {
+.fab:hover, .fa:hover {
     transform: scale(1.1) !important;
 }
 
 #social-icons {
     display: block;
-    margin: 15px auto;
+    margin: 5px auto;
     margin-bottom: 0;
     width: 100%;
     padding: 0;
@@ -175,8 +175,8 @@ footer .container {
     color: rgb(4, 196, 4);
 }
 
-.fa-instagram:hover {
-    color: rgb(225, 48, 108);
+.fa-envelope-square:hover {
+    color: rgb(199,22,16);
 }
 
 .fa-github:hover {
@@ -200,10 +200,10 @@ footer h4 {
 }
 
 aside#Biodata {
-    float: right;
+    float: left;
     text-align: left;
     width: 30%;
-    margin-top: 20px;
+    margin-top: 55px;
 }
 
 .dark {
@@ -242,8 +242,8 @@ aside#Biodata {
 /* Main-col */
 
 article#main-col {
-    float: left;
-    width: 65%;
+    float: right;
+    width: 70%;
     text-align: center;
 }
 
