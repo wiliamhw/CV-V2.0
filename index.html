@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    
     <script src="https://kit.fontawesome.com/a9b2d6eb11.js" crossorigin="anonymous"></script>
 
     <title>My CV</title>
@@ -29,10 +30,10 @@
             </div>
             <nav class="topnav" id="myTopnav">
                 <ul>
-                    <li><a class="link current" href="#main-title">HOME</a></li>
-                    <li><a class="link" href="#about">ABOUT</a></li>
-                    <li><a class="link" href="#project">PORTFOLIO</a></li>
-                    <li><a class="link" href="#skills">SKILL</a></li>
+                    <li><a id="_main-title" class="link current" onclick="_scrollTo(this, 'main-title')">HOME</a></li>
+                    <li><a id="_about" class="link" onclick="_scrollTo(this, 'about')">ABOUT</a></li>
+                    <li><a id="_project" class="link" onclick="_scrollTo(this, 'project')">PORTFOLIO</a></li>
+                    <li><a id="_skills" class="link" onclick="_scrollTo(this, 'skills')">SKILL</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,7 +67,7 @@
                             <li>Full name: William Handi Wijaya</li>
                             <li>Gender: Male</li>
                             <li>Place & date of birth: Jakarta, 19 Nov 2001</li>
-                            <li>Religion: Kristen</li>
+                            <li>Religion: Christian</li>
                             <li>Height: 175 cm</li>
                             <li>Weight: 65 kg</li>
                             <li>Marital status: Not married</li>
@@ -156,24 +157,6 @@
             <div id="right">
                 <div class="p-box">
                     <div class="img-box">
-                        <a href="https://simplepage-whw.netlify.app/">
-                            <img src="./img/mozilla.jpg" class="card-img" alt="Small Page">
-                        </a>
-                    </div>
-                    <h3 class="card-title">Simple Page</h3>
-                    <h4 class="card-exp">Personal Project</h4>
-                </div>
-                <div class="p-box">
-                    <div class="img-box">
-                        <a href="https://cv1-whw.netlify.app/">
-                            <img src="./img/CV.jpg" class="card-img" alt="CV Website v1.0">
-                        </a>
-                    </div>
-                    <h3 class="card-title">CV Website v1.0</h3>
-                    <h4 class="card-exp">Assignment</h4>
-                </div>
-                <div class="p-box">
-                    <div class="img-box">
                         <a href="#main-title">
                             <img src="./img/CV2.jpg" class="card-img" alt="CV Website v2.0">
                         </a>
@@ -199,6 +182,24 @@
                     <h3 class="card-title">To-do List</h3>
                     <h4 class="card-exp">Personal Project</h4>
                 </div>
+                <div class="p-box">
+                    <div class="img-box">
+                        <a href="https://github.com/wiliamhw/Laravel-Tweety">
+                            <img src="./img/twitter-clone.jpg" class="card-img" alt="Twitter Clone">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Twitter Clone</h3>
+                    <h4 class="card-exp">Personal Project</h4>
+                </div>
+                <div class="p-box">
+                    <div class="img-box">
+                        <a>
+                            <img src="./img/ICWeb.jpg" class="card-img" alt="Indocor Web">
+                        </a>
+                    </div>
+                    <h3 class="card-title">Indocor Web</h3>
+                    <h4 class="card-exp">Team Project</h4>
+                </div>
             </div>
         </div>
     </section>
@@ -218,7 +219,7 @@
                     <img src="./img/logo_html.png" alt="HTML5">
                     <div class="txt">
                         <h4><b>HTML5</b></h4>
-                        <p>Experienced</p>
+                        <p>Proficient</p>
                     </div>
                 </div>
                 <div class="card">
@@ -229,9 +230,9 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img/logo_laravel.png" alt="Laravel">
+                    <img src="./img/logo_sqlite.png" alt="Sqlite3">
                     <div class="txt">
-                        <h4><b>Laravel</b></h4>
+                        <h4><b>Sqlite3</b></h4>
                         <p>Familiar</p>
                     </div>
                 </div>
@@ -263,7 +264,7 @@
                     <img src="./img/logo_oracle.png" alt="oracle">
                     <div class="txt">
                         <h4><b>Oracle</b></h4>
-                        <p>Familiar</p>
+                        <p>Experienced</p>
                     </div>
                 </div>
             </div>
@@ -280,13 +281,13 @@
                     <img src="./img/logo_css.png" alt="html">
                     <div class="txt">
                         <h4><b>CSS3</b></h4>
-                        <p>Experienced</p>
+                        <p>Proficient</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="./img/logo_sqlite.png" alt="Sqlite3">
+                    <img src="./img/logo_laravel.png" alt="Laravel">
                     <div class="txt">
-                        <h4><b>Sqlite3</b></h4>
+                        <h4><b>Laravel</b></h4>
                         <p>Experienced</p>
                     </div>
                 </div>

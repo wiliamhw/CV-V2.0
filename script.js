@@ -82,13 +82,22 @@ function dropDown() {
                 // console.log(i, sections[i]);
 
                 document.querySelector('.current').setAttribute('class', 'link');
-                if (i == "main-title") {
-                    target = document.querySelectorAll('a[href*=' + i + ']')[1];
-                } else {
-                    target = document.querySelector('a[href*=' + i + ']');
-                }
+                target = document.querySelector('#_' + i);
                 target.setAttribute('class', 'link current');
             }
         }
     };
 })();
+
+
+// JS to scroll to a section
+function _scrollTo(curr, id) {
+    let element = document.getElementById(id);
+    let subtractor = 70; // getAdder(id)
+
+    window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: (element) ? element.getBoundingClientRect().top + window.scrollY - subtractor : 0
+    });
+}
