@@ -171,10 +171,6 @@ footer .container {
     animation: 1s ease 0s 2 normal none running pulse;
 }
 
-.fa-line:hover {
-    color: rgb(4, 196, 4);
-}
-
 .fa-envelope-square:hover {
     color: rgb(199,22,16);
 }
